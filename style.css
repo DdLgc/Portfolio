@@ -16,3 +16,36 @@
   --color5:linear-gradient(60deg, #29323c 0%, #485563 100%);
   --color6:#DC143C;
 }
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', 'sans-serif';
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;/* Enleve l'espace scrollbar */
+  background: transparent; /*Fonctionne que sur google */
+}
+::-webkit-scrollbar-thumb {
+  background: #030101;
+}
+/* a {
+  text-decoration: none;   Avoir pour enlever pblm avc btp
+} */
+.container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.container {
+  overflow: -moz-scrollbars-none;  /*******obsolète*******/
+  overflow-y: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
