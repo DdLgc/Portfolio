@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+  box-shadow: 0 0 0 3px red inset;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color1:crimson;
+  --color2:white;
+  --color3:#0000002c;
+  --color4:rgba(31, 30, 30, 0.24);
+  --color5:linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --color6:#DC143C;
+}
