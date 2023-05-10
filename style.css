@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Yanone+Kaffeesatz&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Yanone+Kaffeesatz&display=swap");
 
+:root {
+  --color1: crimson;
+  --color2: white;
+  --color3: #0000002c;
+  --color4: rgba(31, 30, 30, 0.24);
+  --color5: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --color6: #dc143c;
+}
 * {
   box-shadow: 0 0 0 3px red inset;
   padding: 0;
@@ -7,40 +15,31 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
-:root {
-  --color1:crimson;
-  --color2:white;
-  --color3:#0000002c;
-  --color4:rgba(31, 30, 30, 0.24);
-  --color5:linear-gradient(60deg, #29323c 0%, #485563 100%);
-  --color6:#DC143C;
-}
 html {
   font-size: 10px;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   scroll-behavior: smooth;
   overflow: scroll;
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0px;/* Enleve l'espace scrollbar */
+  width: 0px; /* Enleve l'espace scrollbar */
   background: transparent; /*Fonctionne que sur google */
 }
 ::-webkit-scrollbar-thumb {
   background: #030101;
 }
-/* a {
-  text-decoration: none;   Avoir pour enlever pblm avc btp
-} */
+a {
+  text-decoration: none;
+}
 .container::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 .container {
-  overflow: -moz-scrollbars-none;  /*******obsolète*******/
+  overflow: -moz-scrollbars-none; /*******obsolète*******/
   overflow-y: scroll;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
   min-height: 100vh;
@@ -48,4 +47,63 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+/* competences */
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+p {
+  color: var(--color3);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--color3);
+  margin: 45px auto 10px auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+h1.section-title {
+  text-decoration: none;
+  padding-bottom: 35px;
+}
+.section-title span {
+  color: var(--color1);
+}
+.cv {
+  display: inline-block;
+  padding: 10px 30px;
+  color: var(--color2);
+  background-color: transparent;
+  border: 2px solid var(--color1);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+.cv:hover {
+  color: var(--color2);
+  background-color: var(--color1);
+}
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--color2);
+}
+.brand h1 span {
+  color: var(--color1);
+}
+h2 {
+  margin-bottom: 5px;
 }
