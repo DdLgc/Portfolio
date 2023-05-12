@@ -9,7 +9,7 @@
   --color6: #dc143c;
 }
 * {
-  box-shadow: 0 0 0 3px red inset;
+  /* box-shadow: 0 0 0 3px red inset; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -48,8 +48,7 @@ a {
   align-items: center;
   justify-content: flex-start;
 }
-
-/* competences */
+/* Skills */
 img {
   height: 100%;
   width: 100%;
@@ -146,7 +145,6 @@ h2 {
   overflow-x: hidden;
   transition: 0.5s ease left;
 }
-
 #header .nav-list ul.active {
   left: 0%;
 }
@@ -233,9 +231,7 @@ h2 {
 #header .hamburger.active .bar ::after {
   top: 0;
 }
-*/
-      
-              /* end Header */
+/* end Header */
 /* Hero !! */
 #hero {
   background: url(./img/pexels-negative-space-34600.jpg);
@@ -403,8 +399,7 @@ h2 {
     140deg,
     rgba(244, 1, 1, 1) 13%,
     rgba(252, 176, 69, 1) 69%,
-    rgba(251, 152, 60, 0.12958686892725846) 97%
-  );
+    rgba(251, 152, 60, 0.12958686892725846) 97%);
   /* clip-path: polygon(0 4%, 87% 0, 100% 100%, 0 93%); */
 }
 #langages .bar {
@@ -426,9 +421,6 @@ button.accordion.skills-item {
   justify-content: center;
   align-items: center;
 }
-
-/************************/
-
 .panel {
   width: 100%;
   height: 100vh;
@@ -437,7 +429,6 @@ button.accordion.skills-item {
   align-items: center;
   justify-content: center;
 }
-
 #langages h3 {
   font-weight: 600;
   letter-spacing: 1px;
@@ -450,13 +441,11 @@ button.accordion.skills-item {
   height: 10px;
   border-radius: 5px;
 }
-
 .progress-bar div {
   height: 10px;
   border-radius: 5px;
   width: 0%;
 }
-
 .progress-bar div span {
   height: 40px;
   width: 40px;
@@ -486,7 +475,6 @@ button.accordion.skills-item {
   background: rgba(109, 47, 154, 0.533);
   animation: Sass 1s linear forwards;
 }
-
 .html span {
   border: 1px solid #5a58;
 }
@@ -704,3 +692,97 @@ button.accordion.skills-item {
   font-size: 1.3rem;
 }
 /* end footer */
+/* keyframes */
+@keyframes hamburger_puls {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: var(--color2);
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: var(--color1);
+    font-weight: 500;
+  }
+}
+/* Keyframes for progression bars  */
+@keyframes html {
+  100% {
+    width: 85%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 55%;
+  }
+}
+@keyframes JS {
+  100% {
+    width: 25%;
+  }
+}
+@keyframes python {
+  100% {
+    width: 99%;
+  }
+}
+@keyframes mysql {
+  100% {
+    width: 47%;
+  }
+}
+@keyframes php {
+  100% {
+    width: 69%;
+  }
+}
+@keyframes figma {
+  100% {
+    width: 39%;
+  }
+}
+@keyframes bash {
+  100% {
+    width: 99%;
+  }
+}
+@keyframes github {
+  100% {
+    width: 55%;
+  }
+}
+@keyframes shotcut {
+  100% {
+    width: 45%;
+  }
+}
+@keyframes sass {
+  100% {
+    width: 87%;
+  }
+}
+@keyframes bootstrap {
+  100% {
+    width: 33%;
+  }
+}
+/*end keyframes */
