@@ -352,6 +352,12 @@ h2 {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+#skills .skills-item h3 {
+  font-size: 2rem;
+  color: var(--color2);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
 #skills .skills-item p {
   color: var(--color2);
   text-align: left;
@@ -375,19 +381,28 @@ h2 {
 }
 .panel {
   border-radius: 15px;
-  padding: 0 18px;
-  background-color: #212529; /*A voir finis  */
+  /* padding: 0 18px; */
+  background-color: var(--color1);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   flex-basis: 22%;
   margin: 1.5%;
+  background: #222;
 }
+/* .panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .imgSkills {
   height: 50px;
   width: 50px;
 }
 #langages {
+  display: inline-block;
   border-radius: 15px;
   padding: 80px 80px 80px 80px;
   margin: 20px 20px 20px 20px;
@@ -399,7 +414,8 @@ h2 {
     140deg,
     rgba(244, 1, 1, 1) 13%,
     rgba(252, 176, 69, 1) 69%,
-    rgba(251, 152, 60, 0.12958686892725846) 97%);
+    rgba(251, 152, 60, 0.12958686892725846) 97%
+  );
   /* clip-path: polygon(0 4%, 87% 0, 100% 100%, 0 93%); */
 }
 #langages .bar {
@@ -420,14 +436,6 @@ button.accordion.skills-item {
   color: #dc143c;
   justify-content: center;
   align-items: center;
-}
-.panel {
-  width: 100%;
-  height: 100vh;
-  background: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 #langages h3 {
   font-weight: 600;
@@ -732,7 +740,7 @@ button.accordion.skills-item {
 }
 @keyframes css {
   100% {
-    width: 55%;
+    width: 45%;
   }
 }
 @keyframes JS {
@@ -786,3 +794,130 @@ button.accordion.skills-item {
   }
 }
 /*end keyframes */
+/* media query */
+/* media query fot tablet*/
+@media only screen and (min-width: 768px) {
+  .cv {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+  }
+  h1.section-title {
+    font-size: 6rem;
+  }
+  /* end media query fot tablet*/
+  /* hero */
+  #hero h1 {
+    font-size: 7rem;
+  }
+  /* end hero */
+  /* skills */
+  #skills .skills-bottom .skills-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  /* end skills */
+  /* Project */
+  #projects .project-item {
+    flex-direction: row;
+  }
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+  #projects .all-projects .project-img {
+    height: 100%;
+  }
+  /* about */
+  #about .about {
+    flex-direction: row;
+  }
+  #about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+  #about .about .col-left .about-img::after {
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid var(--color1);
+  }
+  #about .col-right {
+    text-align: left;
+    padding: 30px;
+  }
+  #about .col-right h1 {
+    text-align: left;
+  }
+  /* end about */
+  /*  contact */
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #contact .contact-item {
+    width: 30%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #contact .contact-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #contact .contact-item .icon img {
+    object-fit: contain;
+  }
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* end contact */
+}
+/*end  media querries tablet */
+/*end  media query for desktop */
+@media only screen and (min-width: 1200px) {
+  #header .hamburger {
+    display: none;
+  }
+  #header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .nav-list ul li {
+    display: inline-block;
+  }
+  #header .nav-list ul li a {
+    font-size: 1.8rem;
+  }
+  #header .nav-list ul a:after {
+    display: none;
+  }
+  #skills .skills-bottom .skills-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+    width: 75vw;
+  }
+}
