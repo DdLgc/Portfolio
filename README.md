@@ -1,6 +1,6 @@
 # Portfolio
 
-## Creation of a portfolio from scratch, showing my deposits and my code with concrete projects.don't hesitate to contact me, I'll be happy to answer your questions.
+## Creation of a portfolio from scratch, showing my deposits and my code with concrete projects.Don't hesitate to contact me, I'll be happy to answer your questions.
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)

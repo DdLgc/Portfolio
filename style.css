@@ -81,13 +81,13 @@ h1.section-title {
 .cv {
   display: inline-block;
   padding: 10px 30px;
+  margin: 15px 0px 0px 5px;
   color: var(--color2);
   background-color: transparent;
   border: 2px solid var(--color1);
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin-top: 30px;
   transition: 0.3s ease;
   transition-property: background-color, color;
 }
@@ -391,7 +391,51 @@ h2 {
   height: 50px;
   width: 50px;
 }
-#langages {
+#langagesBasics {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 6px 80px 50px 80px;
+  margin: 20px 20px 20px 20px;
+  background: #212529;
+  background: linear-gradient(
+    140deg,
+    rgba(244, 1, 1, 1) 13%,
+    rgba(252, 176, 69, 1) 69%,
+    rgba(251, 152, 60, 0.12958686892725846) 97%
+  );
+  /* clip-path: polygon(0 4%, 87% 0, 100% 100%, 0 93%); */
+}
+#langages .bar {
+  padding: 10px 0 4px 0;
+  letter-spacing: 0.1em;
+}
+/* #langages img {
+  width: 30px;
+  height: 30px;
+} */
+#langagesBack {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 6px 80px 50px 80px;
+  margin: 20px 20px 20px 20px;
+  background: #212529;
+  background: linear-gradient(
+    140deg,
+    rgba(244, 1, 1, 1) 13%,
+    rgba(252, 176, 69, 1) 69%,
+    rgba(251, 152, 60, 0.12958686892725846) 97%
+  );
+  /* clip-path: polygon(0 4%, 87% 0, 100% 100%, 0 93%); */
+}
+#langages .bar {
+  padding: 10px 0 4px 0;
+  letter-spacing: 0.1em;
+}
+/* #langages img {
+  width: 30px;
+  height: 30px;
+} */
+#langagesExtra {
   display: inline-block;
   border-radius: 15px;
   padding: 6px 80px 50px 80px;
@@ -500,6 +544,9 @@ button.accordion.skills-item {
   flex-direction: column;
 }
 #projects .project-item {
+  background:var(--color5);
+  color: var(--color2);
+   padding: 10px;/*  gerer les medias avec le pad */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,6 +555,9 @@ button.accordion.skills-item {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+}
+#projects .project-item p {
+  color: var(--color2);
 }
 #projects .project-info {
   padding: 30px;
@@ -531,7 +581,7 @@ button.accordion.skills-item {
   margin-top: 10px;
 }
 #projects .project-info p {
-  color: var(--color2);
+  color: var(--color3);
 }
 #projects .project-img {
   flex-basis: 50%;
