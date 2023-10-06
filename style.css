@@ -258,13 +258,14 @@ h2 {
   justify-content: flex-start;
 }
 #hero h1 {
+  margin :15px;
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 2.7rem;
   position: relative;
   color: transparent;
-  animation: text_reveal 0.5s ease forwards;
-  animation-delay: 1s;
+  animation: text_reveal 0.7s ease forwards;
+  animation-delay: 1.4s;
 }
 #hero h1:nth-child(1) {
   animation-delay: 1s;
@@ -546,7 +547,7 @@ button.accordion.skills-item {
 #projects .project-item {
   background:var(--color5);
   color: var(--color2);
-   padding: 10px;/*  gerer les medias avec le pad */
+   padding: 10px;/*  gerer les medias avec le padding */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -844,7 +845,7 @@ button.accordion.skills-item {
   /* end media query fot tablet*/
   /* hero */
   #hero h1 {
-    font-size: 7rem;
+    font-size: 4rem;
   }
   /* end hero */
   /* skills */
