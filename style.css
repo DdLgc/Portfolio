@@ -258,7 +258,7 @@ h2 {
   justify-content: flex-start;
 }
 #hero h1 {
-  margin :15px;
+  margin: 15px;
   display: block;
   width: fit-content;
   font-size: 2.7rem;
@@ -503,29 +503,85 @@ button.accordion.skills-item {
   background: #5a58;
   animation: html 1s linear forwards;
 }
-.JS {
-  background: rgba(91, 110, 108, 0.533);
-  animation: JS 1s linear forwards;
-}
-.React {
-  background: rgba(144, 216, 27, 0.533);
-  animation: React 1s linear forwards;
-}
-.Sass {
-  background: rgba(109, 47, 154, 0.533);
-  animation: Sass 1s linear forwards;
-}
 .html span {
   border: 1px solid #5a58;
 }
-.JS span {
+.css {
+  background: rgba(26, 149, 211, 0.533);
+  animation: css 1s linear forwards;
+}
+.css span {
+  border: 1px solid rgba(26, 149, 211, 0.533);
+}
+.js {
+  background: rgba(193, 199, 12, 0.903);
+  animation: js 1s linear forwards;
+}
+.js span {
+  border: 1px solid  rgba(193, 199, 12, 0.903);
+}
+/* .sass { */
+  background: rgba(109, 47, 154, 0.533);
+  animation: sass 1s linear forwards;
+}
+.sass span {
   border: 1px solid rgba(91, 110, 108, 0.533);
 }
-.React span {
+.python {
+  background: rgba(109, 47, 154, 0.533);
+  animation: python 1s linear forwards;
+}
+.python span {
   border: 1px solid rgba(144, 216, 27, 0.533);
 }
-.Sass span {
+.php {
+  background: rgba(109, 47, 154, 0.533);
+  animation: php 1s linear forwards;
+}
+.php span {
   border: 1px solid rgba(109, 47, 154, 0.533);
+}
+.mysql {
+  background: rgba(109, 47, 154, 0.533);
+  animation: mysql 1s linear forwards;
+}
+.mysql span {
+  border: 1px solid rgba(91, 110, 108, 0.533);
+}
+.figma {
+  background: rgba(109, 47, 154, 0.533);
+  animation: figma 1s linear forwards;
+}
+.figma span {
+  border: 1px solid rgba(91, 110, 108, 0.533);
+}
+.bash {
+  background: rgba(109, 47, 154, 0.533);
+  animation: bash 1s linear forwards;
+}
+.bash span {
+  border: 1px solid rgba(91, 110, 108, 0.533);
+}
+.github {
+  background: rgba(109, 47, 154, 0.533);
+  animation: github 1s linear forwards;
+}
+.github span {
+  border: 1px solid rgba(91, 110, 108, 0.533);
+}
+.shotcut {
+  background: rgba(109, 47, 154, 0.533);
+  animation: shotcut 1s linear forwards;
+}
+.shotcut span {
+  border: 1px solid rgba(91, 110, 108, 0.533);
+}
+.bootstrap {
+  background: rgba(109, 47, 154, 0.533);
+  animation: bootstrap 1s linear forwards;
+}
+.bootstrap span {
+  border: 1px solid rgba(91, 110, 108, 0.533);
 }
 /* End skills section */
 /* projects section */
@@ -545,9 +601,9 @@ button.accordion.skills-item {
   flex-direction: column;
 }
 #projects .project-item {
-  background:var(--color5);
+  background: var(--color5);
   color: var(--color2);
-   padding: 10px;/*  gerer les medias avec le padding */
+  padding: 10px; /*  gerer les medias avec le padding */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,57 +834,57 @@ button.accordion.skills-item {
 }
 @keyframes css {
   100% {
-    width: 45%;
+    width: 80%;
   }
 }
-@keyframes JS {
+@keyframes js {
   100% {
-    width: 25%;
+    width: 65%;
   }
 }
 @keyframes python {
   100% {
-    width: 99%;
+    width: 30%;
   }
 }
 @keyframes mysql {
   100% {
-    width: 47%;
+    width: 50%;
   }
 }
 @keyframes php {
   100% {
-    width: 69%;
+    width: 66%;
   }
 }
 @keyframes figma {
   100% {
-    width: 39%;
+    width: 62%;
   }
 }
 @keyframes bash {
   100% {
-    width: 99%;
+    width: 45%;
   }
 }
 @keyframes github {
   100% {
-    width: 55%;
+    width: 80%;
   }
 }
 @keyframes shotcut {
   100% {
-    width: 45%;
+    width: 75%;
   }
 }
 @keyframes sass {
   100% {
-    width: 87%;
+    width: 55%;
   }
 }
 @keyframes bootstrap {
   100% {
-    width: 33%;
+    width: 70%;
   }
 }
 /*end keyframes */
