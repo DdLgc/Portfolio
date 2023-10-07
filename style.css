@@ -520,68 +520,68 @@ button.accordion.skills-item {
 .js span {
   border: 1px solid  rgba(193, 199, 12, 0.903);
 }
-/* .sass { */
-  background: rgba(109, 47, 154, 0.533);
+.sass {
+  background:rgba(205, 103, 153);
   animation: sass 1s linear forwards;
 }
 .sass span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 1px solid rgba(205, 103, 153);
 }
 .python {
-  background: rgba(109, 47, 154, 0.533);
+  background:#4B8BBE;
   animation: python 1s linear forwards;
 }
 .python span {
-  border: 1px solid rgba(144, 216, 27, 0.533);
+  border: 1px solid #4B8BBE;
 }
 .php {
-  background: rgba(109, 47, 154, 0.533);
+  background: #8993be;
   animation: php 1s linear forwards;
 }
 .php span {
-  border: 1px solid rgba(109, 47, 154, 0.533);
+  border: 1px solid #8993be;
 }
 .mysql {
-  background: rgba(109, 47, 154, 0.533);
+  background: #F29111;
   animation: mysql 1s linear forwards;
 }
 .mysql span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 1px solid #F29111;
 }
 .figma {
-  background: rgba(109, 47, 154, 0.533);
+  background: #13a7d4;
   animation: figma 1s linear forwards;
 }
 .figma span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 1px solid  #13a7d4;
 }
 .bash {
-  background: rgba(109, 47, 154, 0.533);
+  background: rgba(91, 110, 108, 0.533);
   animation: bash 1s linear forwards;
 }
 .bash span {
   border: 1px solid rgba(91, 110, 108, 0.533);
 }
 .github {
-  background: rgba(109, 47, 154, 0.533);
+  background: rgba(40, 40, 40, 0.533);
   animation: github 1s linear forwards;
 }
 .github span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 1px solid rgba(40, 40, 40, 0.533);
 }
 .shotcut {
-  background: rgba(109, 47, 154, 0.533);
+  background: rgba(27, 200, 168, 0.606);
   animation: shotcut 1s linear forwards;
 }
 .shotcut span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 1px solid rgba(27, 200, 168, 0.606);
 }
 .bootstrap {
   background: rgba(109, 47, 154, 0.533);
   animation: bootstrap 1s linear forwards;
 }
 .bootstrap span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 1px solid  rgba(109, 47, 154, 0.533);
 }
 /* End skills section */
 /* projects section */
@@ -849,7 +849,7 @@ button.accordion.skills-item {
 }
 @keyframes mysql {
   100% {
-    width: 50%;
+    width: 40%;
   }
 }
 @keyframes php {
