@@ -459,8 +459,13 @@ h2 {
   height: 30px;
 } */
 .imgBar {
+  display: block;
+  margin: auto 0;
   width: 30px;
   height: 30px;
+}
+.icon-container {
+  text-align: center; /* Centre les icônes horizontalement */
 }
 button.accordion.skills-item {
   font-size: large;
@@ -476,6 +481,7 @@ button.accordion.skills-item {
   margin-bottom: 10px;
 }
 .progress-bar {
+  text-align: center;
   background: #959595;
   width: 600px;
   height: 10px;
