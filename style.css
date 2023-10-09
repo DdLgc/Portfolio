@@ -381,6 +381,7 @@ h2 {
   background-color: #ccc;
 }
 .panel {
+  max-height: 0px;
   border-radius: 15px;
   padding: 0 24px;
   overflow: hidden;
@@ -464,9 +465,6 @@ h2 {
   width: 30px;
   height: 30px;
 }
-.icon-container {
-  text-align: center; /* Centre les icônes horizontalement */
-}
 button.accordion.skills-item {
   font-size: large;
   font-weight: bold;
@@ -510,84 +508,84 @@ button.accordion.skills-item {
   animation: html 1s linear forwards;
 }
 .html span {
-  border: 1px solid #5a58;
+  border: 2.5px solid #5a58;
 }
 .css {
   background: rgba(26, 149, 211, 0.533);
   animation: css 1s linear forwards;
 }
 .css span {
-  border: 1px solid rgba(26, 149, 211, 0.533);
+  border: 2.5px solid rgba(26, 149, 211, 0.533);
 }
 .js {
   background: rgba(193, 199, 12, 0.903);
   animation: js 1s linear forwards;
 }
 .js span {
-  border: 1px solid  rgba(193, 199, 12, 0.903);
+  border: 2.5px solid  rgba(193, 199, 12, 0.903);
 }
 .sass {
   background:rgba(205, 103, 153);
   animation: sass 1s linear forwards;
 }
 .sass span {
-  border: 1px solid rgba(205, 103, 153);
+  border: 2.5px solid rgba(205, 103, 153);
 }
 .python {
   background:#4B8BBE;
   animation: python 1s linear forwards;
 }
 .python span {
-  border: 1px solid #4B8BBE;
+  border: 2.5px solid #4B8BBE;
 }
 .php {
   background: #8993be;
   animation: php 1s linear forwards;
 }
 .php span {
-  border: 1px solid #8993be;
+  border: 2.5px solid #8993be;
 }
 .mysql {
   background: #F29111;
   animation: mysql 1s linear forwards;
 }
 .mysql span {
-  border: 1px solid #F29111;
+  border: 2.5px solid #F29111;
 }
 .figma {
   background: #13a7d4;
   animation: figma 1s linear forwards;
 }
 .figma span {
-  border: 1px solid  #13a7d4;
+  border: 2.5px solid  #13a7d4;
 }
 .bash {
   background: rgba(91, 110, 108, 0.533);
   animation: bash 1s linear forwards;
 }
 .bash span {
-  border: 1px solid rgba(91, 110, 108, 0.533);
+  border: 2.5px solid rgba(91, 110, 108, 0.533);
 }
 .github {
   background: rgba(40, 40, 40, 0.533);
   animation: github 1s linear forwards;
 }
 .github span {
-  border: 1px solid rgba(40, 40, 40, 0.533);
+  border: 2.5px solid rgba(40, 40, 40, 0.533);
 }
 .shotcut {
   background: rgba(27, 200, 168, 0.606);
   animation: shotcut 1s linear forwards;
 }
 .shotcut span {
-  border: 1px solid rgba(27, 200, 168, 0.606);
+  border: 2.5px solid rgba(27, 200, 168, 0.606);
 }
 .bootstrap {
   background: rgba(109, 47, 154, 0.533);
   animation: bootstrap 1s linear forwards;
 }
 .bootstrap span {
-  border: 1px solid  rgba(109, 47, 154, 0.533);
+  border: 2.5px solid  rgba(109, 47, 154, 0.533);
 }
 /* End skills section */
 /* projects section */
