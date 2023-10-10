@@ -9,7 +9,7 @@
   --color6: #dc143c;
 }
 * {
-  /* box-shadow: 0 0 0 3px red inset; */
+  /* box-shadow: 0 0 0 3px rgb(205, 30, 182) inset; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
