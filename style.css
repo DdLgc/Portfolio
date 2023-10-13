@@ -559,12 +559,12 @@ button.accordion.skills-item {
 .figma span {
   border: 2.5px solid  #13a7d4;
 }
-.bash {
-  background: rgba(91, 110, 108, 0.533);
-  animation: bash 1s linear forwards;
+.angular {
+  background: rgba(244, 1, 1, 1);
+  animation: angular 1s linear forwards;
 }
-.bash span {
-  border: 2.5px solid rgba(91, 110, 108, 0.533);
+.angular span {
+  border: 2.5px solid rgba(244, 1, 1, 1);
 }
 .github {
   background: rgba(40, 40, 40, 0.533);
@@ -573,19 +573,19 @@ button.accordion.skills-item {
 .github span {
   border: 2.5px solid rgba(40, 40, 40, 0.533);
 }
-.shotcut {
-  background: rgba(27, 200, 168, 0.606);
-  animation: shotcut 1s linear forwards;
-}
-.shotcut span {
-  border: 2.5px solid rgba(27, 200, 168, 0.606);
-}
 .bootstrap {
   background: rgba(109, 47, 154, 0.533);
   animation: bootstrap 1s linear forwards;
 }
 .bootstrap span {
   border: 2.5px solid  rgba(109, 47, 154, 0.533);
+}
+.dbeaver {
+  background: rgba(27, 200, 168, 0.606);
+  animation: dbeaver 1s linear forwards;
+}
+.dbeaver span {
+  border: 2.5px solid rgba(27, 200, 168, 0.606);
 }
 /* End skills section */
 /* projects section */
@@ -866,9 +866,9 @@ button.accordion.skills-item {
     width: 62%;
   }
 }
-@keyframes bash {
+@keyframes angular {
   100% {
-    width: 45%;
+    width: 42%;
   }
 }
 @keyframes github {
@@ -876,9 +876,9 @@ button.accordion.skills-item {
     width: 80%;
   }
 }
-@keyframes shotcut {
+@keyframes dbeaver {
   100% {
-    width: 75%;
+    width: 42%;
   }
 }
 @keyframes sass {
@@ -888,7 +888,7 @@ button.accordion.skills-item {
 }
 @keyframes bootstrap {
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 /*end keyframes */

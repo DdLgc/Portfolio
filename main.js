@@ -23,17 +23,14 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-      //  // Sélectionnez tous les éléments de classe "accordion"
+
       //  var accordions = document.querySelectorAll(".accordion");
 
-      //  // Parcourez chaque élément "accordion"
       //  accordions.forEach(function(accordion) {
-      //      // Ajoutez un gestionnaire d'événement "click" à chaque élément "accordion"
       //      accordion.addEventListener("click", function() {
       //          // Sélectionnez le panneau associé à l'élément "accordion" cliqué
+      
       //          var panel = this.nextElementSibling;
-
-      //          // Vérifiez si le panneau est actuellement affiché ou masqué
       //          if (panel.style.display === "block") {
       //              // Si affiché, masquez-le
       //              panel.style.display = "none";
