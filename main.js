@@ -1,4 +1,4 @@
-// accordion (skills bar)
+// // accordion (skills bar)
 
 let acc = document.getElementsByClassName("accordion");
 let i;
@@ -7,12 +7,14 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     // Réinitialise tous les éléments
     for (let j = 0; j < acc.length; j++) {
-      acc[j].classList.remove("active");
-      let panel = acc[j].nextElementSibling;
-      panel.style.maxHeight = null;
+      if (acc[j] !== this) {  
+        // Vérifie que l'élément n'est pas l'élément actuel
+        acc[j].classList.remove("active");
+        let panel = acc[j].nextElementSibling;
+        panel.style.maxHeight = null;
+      }
     }
 
-    // Ajoute la classe "active" à l'élément actuel
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -23,23 +25,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-      //  var accordions = document.querySelectorAll(".accordion");
-
-      //  accordions.forEach(function(accordion) {
-      //      accordion.addEventListener("click", function() {
-      //          // Sélectionnez le panneau associé à l'élément "accordion" cliqué
-      
-      //          var panel = this.nextElementSibling;
-      //          if (panel.style.display === "block") {
-      //              // Si affiché, masquez-le
-      //              panel.style.display = "none";
-      //          } else {
-      //              // Sinon, affichez-le
-      //              panel.style.display = "block";
-      //          }
-      //      });
-      //  });
 
 
 // Menu hamburger
@@ -69,3 +54,7 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
+
+// reponse du prof 
+// spécifique avec un if (element.classlist.contains('active')) { //logiciue fermeture ici } else { //votre code actuel }
