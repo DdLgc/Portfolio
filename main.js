@@ -54,7 +54,3 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
-
-
-// reponse du prof 
-// spécifique avec un if (element.classlist.contains('active')) { //logiciue fermeture ici } else { //votre code actuel }
