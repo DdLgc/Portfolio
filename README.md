@@ -8,10 +8,10 @@ Projets innovants : Il présente plusieurs projets, y compris des sites web pour
 Design Responsive : Conçu avec une approche mobile-first, le portfolio garantit une expérience utilisateur optimale sur tous les appareils.  
 
 ## Sections
-Accueil : Une introduction attrayante qui présente brièvement mes compétences et mes domaines d'expertise.
-Compétences : Détails de mes compétences techniques et des outils que je maîtrise.
-Projets : Une vitrine de mes travaux antérieurs avec des liens vers les projets en direct.
-A propos : Mon parcours professionnel et mes motivations.
+Accueil : Une introduction attrayante qui présente brièvement mes compétences et mes domaines d'expertise.  
+Compétences : Détails de mes compétences techniques et des outils que je maîtrise.  
+Projets : Une vitrine de mes travaux antérieurs avec des liens vers les projets en direct.  
+A propos : Mon parcours professionnel et mes motivations.  
 Contact : Informations pour me contacter facilement.  
 
 ## Technologies Utilisées
