@@ -54,3 +54,7 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
+// copyrihgt
+const currentYear = new Date().getFullYear();
+  document.getElementById('copyright').textContent = `Copyright © ${currentYear} Ddlgc`;
