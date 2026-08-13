@@ -1,2 +1,13 @@
 # Local Netlify folder
 .netlify
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
