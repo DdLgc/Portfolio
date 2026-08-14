@@ -1,60 +1,38 @@
-// // accordion (skills bar)
+// navigation mobile 
 
-let acc = document.getElementsByClassName("accordion");
-let i;
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector("#main-navigation");
+const menuLinks = document.querySelector("#main-navigation a");
+const header = document.querySelector("#header");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    // Réinitialise tous les éléments
-    for (let j = 0; j < acc.length; j++) {
-      if (acc[j] !== this) {  
-        // Vérifie que l'élément n'est pas l'élément actuel
-        acc[j].classList.remove("active");
-        let panel = acc[j].nextElementSibling;
-        panel.style.maxHeight = null;
-      }
-    }
+function toggleMobileMenu() {
+  const isOpen = hamburger.classList.toggle("active");
 
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
+  mobileMenu.classList.toggle("active");
+  hamburger.setAttribute("aria-expanded", isOpen);
 }
 
 
+function closeMobileMenu(){
+  hamburger.classList.remove("active");
+  mobileMenu.classList.remove("active");
+  hzmburger.setAttribute("aria-expanded", isOpen);
+}
 
-// Menu hamburger
+hamburger.addEventListener("click",toggleMobileMenu);
 
-const hamburger = document.querySelector(".header .nav-bar .nav-list .hamburger");
-const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
-const menu_item = document.querySelectorAll(".header .nav-bar .nav-list ul li a");
-const header = document.querySelector(".header.container");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  mobile_menu.classList.toggle("active");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", closeMobileMenu);
 });
 
-document.addEventListener("scroll", () => {
-  let scroll_position = window.scrollY;
-  if (scroll_position > 250) {
-    header.style.backgroundColor = "#29323c";
-  } else {
-    header.style.backgroundColor = "transparent";
-  }
+document.addEventListener("keydown", (event) => {
+  header.classList.toggle("scrolled", window.scrollY >100);
 });
 
-menu_item.forEach((item) => {
-  item.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    mobile_menu.classList.toggle("active");
-  });
-});
+const copyright = document.querySelector("#copyright");
 
-// copyrihgt
-const currentYear = new Date().getFullYear();
-  document.getElementById('copyright').textContent = `Copyright © ${currentYear} Ddlgc`;
+if (copyright) {
+  const currentYear = new Date().getFullYear();
+
+  copyright.textContent = `© ${currentYear} David Le Gouellec`;
+}
