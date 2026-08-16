@@ -1,7 +1,7 @@
-/* =========================================================
+/* ==========================================================================================
    Portfolio v2
    David Le Gouellec
-   ========================================================= */
+   ======================================================================================= */
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Yanone+Kaffeesatz&display=swap");
 
@@ -43,16 +43,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 20px);
 }
 
 body {
   min-height: 100vh;
-
+  text-rendering: optimizeLegibility;
   background-color: var(--color-background);
-
+  -webkit-font-smoothing: antialiased;
   color: var(--color-text);
 
   font-family: var(--font-primary);
@@ -92,6 +97,9 @@ button:focus-visible {
 
 main {
   overflow: hidden;
+}
+#main-navigation a {
+  padding-block: 0.5rem;
 }
 .container {
   width: min(100% - 2rem, var(--container-width));
@@ -151,16 +159,13 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  transform: translateY(0);
   min-height: 48px;
   padding: 0.75rem 1.4rem;
-
   border: 1px solid transparent;
   border-radius: var(--radius-small);
-
   font-size: 0.95rem;
   font-weight: 600;
-
   transition:
     background-color var(--transition-fast),
     border-color var(--transition-fast),
@@ -174,12 +179,13 @@ section {
 
 .btn-primary {
   background-color: var(--color-primary);
-
+  box-shadow: 0 8px 22px rgba(225, 29, 72, 0.2);
   color: #ffffff;
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-hover);
+  box-shadow: 0 12px 28px rgba(225, 29, 72, 0.3);
 }
 
 .btn-secondary {
@@ -384,6 +390,7 @@ section {
 
 .hero-content {
   max-width: 760px;
+   padding-block: 4rem;
 }
 
 .hero-intro {
@@ -957,6 +964,53 @@ section {
 .footer-bottom a:hover {
   color: var(--color-primary);
 }
+/* =========================
+   Section rhythm
+   ========================= */
+
+#skills,
+#workflow,
+#contact {
+  position: relative;
+}
+
+#skills::before,
+#workflow::before,
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(90%, var(--container-width));
+  height: 1px;
+  background-color: var(--color-border);
+  transform: translateX(-50%);
+}
+.skill-category,
+.project-card,
+.workflow-item,
+.contact-card {
+  will-change: transform;
+}
+
+.skill-category:hover,
+.project-card:hover,
+.workflow-item:hover,
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+.skill-list li,
+.project-stack li,
+.project-status {
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.project-card:hover .project-status {
+  background-color: rgba(225, 29, 72, 0.2);
+}
 
 /* =========================
    Media Querries
@@ -977,6 +1031,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    padding: 0.5rem 1rem;
     background-color: rgba(15, 23, 42, 0.98);
     transform: translateX(100%);
     transition: transform var(--transition-normal);
@@ -1049,6 +1104,12 @@ section {
   .hero-actions .btn {
     width: 100%;
   }
+  .hero-content {
+    padding-block: 2rem;
+  }
+  .hero-description {
+  max-width: 600px;
+}
   .workflow-grid {
     grid-template-columns: 1fr;
   }
@@ -1084,5 +1145,19 @@ section {
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
