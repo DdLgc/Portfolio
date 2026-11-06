@@ -1,60 +1,58 @@
-// // accordion (skills bar)
 
-let acc = document.getElementsByClassName("accordion");
-let i;
+"use strict";
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    // Réinitialise tous les éléments
-    for (let j = 0; j < acc.length; j++) {
-      if (acc[j] !== this) {  
-        // Vérifie que l'élément n'est pas l'élément actuel
-        acc[j].classList.remove("active");
-        let panel = acc[j].nextElementSibling;
-        panel.style.maxHeight = null;
-      }
-    }
+// Navigation mobile
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector("#main-navigation");
+const menuLinks = document.querySelectorAll("#main-navigation a");
+const header = document.querySelector("#header");
 
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+function toggleMobileMenu() {
+  const isOpen = hamburger.classList.toggle("active");
+
+  mobileMenu.classList.toggle("active", isOpen);
+  hamburger.setAttribute("aria-expanded", String(isOpen));
+  hamburger.setAttribute(
+    "aria-label",
+    isOpen ? "Fermer le menu" : "Ouvrir le menu"
+  );
+}
+
+function closeMobileMenu() {
+  hamburger.classList.remove("active");
+  mobileMenu.classList.remove("active");
+  hamburger.setAttribute("aria-expanded", "false");
+  hamburger.setAttribute("aria-label", "Ouvrir le menu");
+}
+
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener("click", toggleMobileMenu);
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && hamburger.classList.contains("active")) {
+      closeMobileMenu();
+      hamburger.focus();
     }
   });
 }
 
-
-
-// Menu hamburger
-
-const hamburger = document.querySelector(".header .nav-bar .nav-list .hamburger");
-const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
-const menu_item = document.querySelectorAll(".header .nav-bar .nav-list ul li a");
-const header = document.querySelector(".header.container");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  mobile_menu.classList.toggle("active");
-});
-
-document.addEventListener("scroll", () => {
-  let scroll_position = window.scrollY;
-  if (scroll_position > 250) {
-    header.style.backgroundColor = "#29323c";
-  } else {
-    header.style.backgroundColor = "transparent";
+// Apparence du header au défilement
+if (header) {
+  function updateHeaderOnScroll() {
+    header.classList.toggle("scrolled", window.scrollY > 100);
   }
-});
 
-menu_item.forEach((item) => {
-  item.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    mobile_menu.classList.toggle("active");
-  });
-});
+  window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
+  updateHeaderOnScroll();
+}
 
-// copyrihgt
-const currentYear = new Date().getFullYear();
-  document.getElementById('copyright').textContent = `Copyright © ${currentYear} Ddlgc`;
+// Copyright dynamique
+const copyright = document.querySelector("#copyright");
+
+if (copyright) {
+  copyright.textContent = `© ${new Date().getFullYear()} David Le Gouellec`;
+}
