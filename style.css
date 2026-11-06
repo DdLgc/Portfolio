@@ -237,7 +237,7 @@ section {
    Brand
    ========================= */
 
-.brand h1 {
+.brand .brand-name {
   color: var(--color-text);
 
   font-family: var(--font-heading);
@@ -246,7 +246,7 @@ section {
 
   letter-spacing: 0.02em;
 }
-.brand h1 span {
+.brand .brand-name span {
   color: var(--color-primary);
 }
 
@@ -473,7 +473,7 @@ section {
     width: min(100% - 1.5rem, var(--container-width));
   }
 
-  .brand h1 {
+  .brand .brand-name {
     font-size: 1rem;
   }
 
@@ -1281,7 +1281,7 @@ section {
     width: min(100% - 1.5rem, var(--container-width));
   }
 
-  .brand h1 {
+  .brand .brand-name {
     font-size: 1rem;
   }
 
