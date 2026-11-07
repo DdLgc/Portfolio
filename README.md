@@ -1,19 +1,17 @@
 # Portfolio — David Le Gouellec
 
-[![Statut](https://img.shields.io/badge/Statut-V2%20en%20finalisation-blue)](https://github.com/DdLgc/Portfolio)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black)
+![Version](https://img.shields.io/badge/Version-v2.0.0-red)
+![Status](https://img.shields.io/badge/Status-Terminé-success)
+[![Netlify](https://img.shields.io/badge/Netlify-En_ligne-00C7B7?logo=netlify&logoColor=white)](https://ddlgc-portfolio.netlify.app/)
 
 ---
 
 ## Description
 
 Portfolio personnel de David Le Gouellec, développeur web Full Stack, conçu pour présenter mes compétences, mes réalisations et ma méthode de travail. Cette seconde version propose une interface sombre, une présentation structurée des projets et une navigation adaptée aux différents écrans.
-
-**[Portfolio en ligne](https://ddlgc-portfolio.netlify.app/)** · **[Dépôt GitHub](https://github.com/DdLgc/Portfolio)** · **[LinkedIn](https://www.linkedin.com/in/david-le-gouellec-551322243/)**
-
-> **Déploiement :** l'URL publique peut encore présenter l'ancienne version tant que la V2 n'est pas fusionnée et déployée.
 
 ---
 
@@ -190,9 +188,11 @@ Portfolio/
 
 **David Le Gouellec** — Développeur web Full Stack.
 
-- [GitHub](https://github.com/DdLgc)
-- [LinkedIn](https://www.linkedin.com/in/david-le-gouellec-551322243/)
-- [E-mail](mailto:legouellecd@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ddlgc-portfolio.netlify.app/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DdLgc)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-le-gouellec-551322243/)
 
 ---
 
